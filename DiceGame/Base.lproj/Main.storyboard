@@ -52,7 +52,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="283.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="c0n-C8-CPu">
-                                        <rect key="frame" x="67.5" y="78" width="240.00000000000006" height="128"/>
+                                        <rect key="frame" x="67.5" y="78" width="240" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="J5z-qP-eCL"/>
                                             <constraint firstAttribute="width" constant="240" id="qIQ-yl-ItC"/>
@@ -78,6 +78,9 @@
                                         <state key="normal" title="Roll">
                                             <color key="titleColor" red="0.96699565789999997" green="1" blue="0.68042058679999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rollDiceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nfk-i1-lIN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -105,6 +108,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="diceImage1" destination="1Pr-bH-B19" id="b9J-NM-WFc"/>
+                        <outlet property="diceImage2" destination="sq2-U9-wOv" id="pXJ-xt-9p8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
